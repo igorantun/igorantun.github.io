@@ -1,0 +1,190 @@
+::selection {
+  background: #AAA;
+}
+
+::-moz-selection {
+  background: #AAA;
+}
+
+@font-face {
+  font-family: League Script;
+  src: url('../fonts/LeagueScriptNumberOne-webfont.svg') format('svg');
+  src: url('../fonts/LeagueScriptNumberOne-webfont.eot') format(''),
+       url('../fonts/LeagueScriptNumberOne-webfont.woff') format('woff'),
+       url('../fonts/LeagueScriptNumberOne-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(19, 19, 20);
+  font-family: "Varela Round";
+  color: white;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+img {
+  border-radius: 50%;
+  width: 100px;
+  vertical-align: middle;
+}
+
+h2, h3 {
+  margin: 0 0 0 0;
+  font-weight: 300;
+}
+
+h3 span, h2 span {
+  font-weight: 200;
+  background-color: rgb(19, 19, 20);
+}
+
+h4 {
+  margin-top: 10px;
+  display: inline;
+  background-color: rgb(19, 19, 20);
+}
+
+a {
+  text-decoration: none;
+  background-color: rgb(19, 19, 20);
+}
+
+
+.middle {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.texts {
+  padding-top: 100px;
+  font-family: "Josefin Sans";
+}
+
+.texts h3 span:first-child {
+  font-family: "League Script";
+}
+
+.texts h3 span {
+  font-weight: 500!important;
+  background-color: rgb(19, 19, 20);
+}
+
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#intro {
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+#social {
+  padding-top: 50px;
+  margin: 50px;
+  text-align: center;
+}
+
+#social a {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#social a:hover {
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+}
+
+#description {
+  font-size: 30pt;
+  padding-top: 100px;
+  padding-left: 400px;
+  padding-right: 400px;
+  font-family: "Josefin Sans";
+}
+
+
+#facebook {
+  color: #3b5998;
+}
+
+#twitter {
+  color: #55acee;
+}
+
+#github {
+  color: #999999;
+}
+
+#linkedin {
+  color: #0077b5;
+}
+
+#stackoverflow {
+  color: #fe7a15;
+}
+
+
+.blinking-cursor {
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}

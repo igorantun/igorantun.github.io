@@ -126,18 +126,14 @@ a, a:active, a:visited, a:link, a:hover {
 #description {
   font-size: 30pt;
   padding-top: 100px;
-  padding-left: 400px;
-  padding-right: 400px;
+  padding-left: 10%;
+  padding-right: 10%;
   font-family: "Josefin Sans";
 }
 
 
 #facebook {
   color: #3b5998;
-}
-
-#twitter {
-  color: #55acee;
 }
 
 #github {
@@ -158,6 +154,37 @@ a, a:active, a:visited, a:link, a:hover {
   -ms-animation: 1s blink step-end infinite;
   -o-animation: 1s blink step-end infinite;
   animation: 1s blink step-end infinite;
+}
+
+@media only screen and (max-width:768px) {
+  #intro {
+    padding-left: 25px;
+    padding-top: 25px;
+  }
+
+  #description {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-size: 1.5em;
+  }
+
+  .texts {
+    padding-top: 50px;
+  }
+
+  .texts h3 {
+    padding-bottom: 15px;
+  }
+
+  #social {
+    padding-top: 0;
+    margin: 25px;
+  }
+
+  img {
+    width: 75px;
+  }
 }
 
 @keyframes "blink" {

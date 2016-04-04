@@ -104,6 +104,7 @@ a, a:active, a:visited, a:link, a:hover {
 }
 
 #social {
+  line-height: 1.4;
   padding-top: 50px;
   margin: 50px;
   text-align: center;

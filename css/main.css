@@ -49,11 +49,15 @@ h4 {
   background-color: rgb(19, 19, 20);
 }
 
-a {
+a, a:active, a:visited, a:link, a:hover {
+  color: white;
   text-decoration: none;
   background-color: rgb(19, 19, 20);
 }
 
+.fa {
+  display: inline-block;
+}
 
 .status {
   display: block;
@@ -115,6 +119,10 @@ a {
   border-top: solid 1px;
 }
 
+#social a:last-child:hover {
+  border-top: none;
+}
+
 #description {
   font-size: 30pt;
   padding-top: 100px;
@@ -143,7 +151,6 @@ a {
 #stackoverflow {
   color: #fe7a15;
 }
-
 
 .blinking-cursor {
   -webkit-animation: 1s blink step-end infinite;

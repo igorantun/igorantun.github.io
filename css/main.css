@@ -152,7 +152,14 @@ a, a:active, a:visited, a:link, a:hover {
   animation: 1s blink step-end infinite;
 }
 
-@media only screen and (max-width:768px) {
+
+@media only screen and (max-height: 850px) {
+  #social {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   #intro {
     padding-left: 25px;
     padding-top: 25px;

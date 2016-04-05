@@ -59,7 +59,7 @@ a, a:active, a:visited, a:link, a:hover {
   display: inline-block;
 }
 
-.status {
+#status {
   display: block;
   color: #FC2542;
   padding-top: 5px;

@@ -1,3 +1,4 @@
+/* Body */
 ::selection {
   background: #AAA;
 }
@@ -6,14 +7,11 @@
   background: #AAA;
 }
 
-@font-face {
-  font-family: League Script;
-  src: url('../fonts/LeagueScriptNumberOne-webfont.svg') format('svg');
-  src: url('../fonts/LeagueScriptNumberOne-webfont.eot') format(''),
-       url('../fonts/LeagueScriptNumberOne-webfont.woff') format('woff'),
-       url('../fonts/LeagueScriptNumberOne-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+* {
+  animation: fadein .7s;
+  -moz-animation: fadein .7s;
+  -webkit-animation: fadein .7s;
+  -o-animation: fadein .7s;
 }
 
 body {
@@ -22,128 +20,181 @@ body {
   color: white;
 }
 
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
 
+
+/* Elements */
 img {
   border-radius: 50%;
   width: 100px;
   vertical-align: middle;
 }
 
-h2, h3 {
+h2, h3, h4, h5, p {
   margin: 0 0 0 0;
-  font-weight: 300;
-}
-
-h3 span, h2 span {
-  font-weight: 200;
-  background-color: rgb(19, 19, 20);
 }
 
 h4 {
   margin-top: 10px;
   display: inline;
-  background-color: rgb(19, 19, 20);
 }
 
 a, a:active, a:visited, a:link, a:hover {
   color: white;
   text-decoration: none;
-  background-color: rgb(19, 19, 20);
 }
 
-.fa {
-  display: inline-block;
+a:hover {
+  transition: color .2s;
+  -moz-transition: color .2s;
+  -webkit-transition: color .2s;
+  -o-transition: color .2s;
+  color: #999999;
 }
 
-#status {
+hr {
+  margin-top: 25px;
+  margin-bottom: 25px;
   display: block;
-  color: #FC2542;
-  padding-top: 5px;
-  font-size: 11px;
-  font-weight: bold;
-  background-color: rgb(19, 19, 20);
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #252525;
 }
 
+
+
+/* Basic Rules */
 .middle {
   display: inline-block;
   vertical-align: middle;
   margin-left: 10px;
 }
 
-.texts {
+.section {
   padding-top: 100px;
-  font-family: "Josefin Sans";
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.texts h3 span:first-child {
-  font-family: "League Script";
+.section:after { 
+  content: ' '; 
+  display: block;
+  clear: both;
+} 
+
+.disabled {
+  pointer-events: none;
+  color: #999999!important;
+  text-decoration: line-through!important;
 }
 
-.texts h3 span {
-  font-weight: 500!important;
-  background-color: rgb(19, 19, 20);
-}
 
 
-#bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
+/* Intro & Status */
 #intro {
-  padding-left: 100px;
-  padding-top: 100px;
+  padding-left: 150px;
+  padding-top: 125px;
+  cursor: default;
 }
 
-#social {
-  line-height: 1.4;
-  padding-top: 50px;
-  margin: 50px;
+#status {
+  display: block;
+  color: #B5D045;
+  padding-top: 5px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+#end {
+  margin-top: 100px;
   text-align: center;
-}
-
-#social a {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-#social a:hover {
-  border-bottom: solid 1px;
-}
-
-#description {
-  font-size: 30pt;
-  padding-top: 100px;
-  padding-left: 10%;
-  padding-right: 10%;
-  font-family: "Josefin Sans";
+  cursor: default;
 }
 
 
-#facebook {
-  color: #3b5998;
+
+/* Menu */
+.menu {
+  float: right;
+  padding-right: 150px;
+  padding-top: 40px;
 }
 
-#github {
-  color: #999999;
+.menu h4 {
+  margin: 10px;
 }
 
-#linkedin {
-  color: #0077b5;
+#nav {
+  text-align: left;
+  position: fixed;
+  top: 350px;
+  left: 150px;
 }
 
-#stackoverflow {
-  color: #fe7a15;
+#nav a {
+  padding-bottom: 5px;
+  display: block;
 }
 
+#nav span {
+  display: block;
+  padding-bottom: 15px;
+  cursor: default;
+}
+
+
+
+/* Text */
+.level {
+  float: right;
+  font-size: 14px;
+  cursor: default;
+}
+
+.techs {
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-top: 5px;
+}
+
+.ref {
+  font-size: 15px;
+}
+
+
+
+/* Colors */
+.skills {
+  color: #F3C110!important;
+}
+
+.github {
+  color: #B5D045!important;
+}
+
+.jobs {
+  color: #E07A3F!important;
+}
+
+.proficiency {
+  color: #FF9AC8!important;
+}
+
+.volunteering {
+  color: #81C0C5!important;
+}
+
+.red {
+  color: #D51930!important;
+}
+
+
+
+/* Blinking Animation */
 .blinking-cursor {
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
@@ -153,6 +204,8 @@ a, a:active, a:visited, a:link, a:hover {
 }
 
 
+
+/* Responsive */
 @media only screen and (max-height: 850px) {
   #social {
     padding-top: 0;
@@ -190,6 +243,9 @@ a, a:active, a:visited, a:link, a:hover {
   }
 }
 
+
+
+/* Keyframes */
 @keyframes "blink" {
   from, to {
     color: transparent;
@@ -232,5 +288,42 @@ a, a:active, a:visited, a:link, a:hover {
   }
   50% {
     color: white;
+  }
+}
+
+
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
   }
 }

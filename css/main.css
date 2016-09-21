@@ -155,6 +155,7 @@ hr {
   float: right;
   font-size: 14px;
   cursor: default;
+  margin-top: 6px;
 }
 
 .techs {

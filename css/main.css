@@ -33,7 +33,7 @@ h1 {
   margin-right: 10px;
 }
 
-h2, h3, h4, h5, p {
+h2, p {
   margin: 0 0 0 0;
 }
 
@@ -101,6 +101,16 @@ hr {
   cursor: default;
 }
 
+#intro h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+#intro h2 {
+  margin: 0;
+  font-size: 1em;
+}
+
 #status {
   display: block;
   color: #B5D045;
@@ -126,8 +136,13 @@ hr {
   padding-top: 40px;
 }
 
-.menu h4 {
+.menu a {
+  font-weight: bold;
   margin: 10px;
+}
+
+.menu a:first-child  {
+  border-bottom: solid 1px;
 }
 
 #nav {

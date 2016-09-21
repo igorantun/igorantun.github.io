@@ -308,7 +308,6 @@ hr {
   .level {
     float: none;
     display: block;
-    margin-top: -3px;
     margin-bottom: 7.5px;
   }
 }

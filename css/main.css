@@ -29,6 +29,10 @@ img {
   vertical-align: middle;
 }
 
+h1 {
+  margin-right: 10px;
+}
+
 h2, h3, h4, h5, p {
   margin: 0 0 0 0;
 }
@@ -209,6 +213,62 @@ hr {
 @media only screen and (max-height: 850px) {
   #social {
     padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .ref {
+    display: none;
+  }
+
+  .section {
+    padding-top: 50px;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #intro {
+    padding-left: 100px;
+    padding-top: 100px;
+  }
+
+  .menu {
+    padding-right: 100px;
+  }
+
+  .menu h4 {
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 925px) {
+  .menu {
+    display: none;
+  }
+
+  .middle {
+    text-align: left;
+  }
+
+  .section {
+    width: 90%;
+  }
+
+  #intro {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 30px;
   }
 }
 

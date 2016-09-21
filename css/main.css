@@ -304,6 +304,15 @@ hr {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .level {
+    float: none;
+    display: block;
+    margin-top: -3px;
+    margin-bottom: 7.5px;
+  }
+}
+
 
 
 /* Keyframes */

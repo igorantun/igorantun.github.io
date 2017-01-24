@@ -122,6 +122,20 @@ hr {
   cursor: default;
 }
 
+#bio {
+  text-align: center;
+}
+
+#bio h1 {
+  margin: 0;
+}
+
+#bio h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
 #end {
   margin-top: 100px;
   text-align: center;
@@ -158,6 +172,10 @@ hr {
   display: block;
 }
 
+#nav a:last-child {
+  text-decoration: underline;
+}
+
 #nav span {
   display: block;
   padding-bottom: 15px;
@@ -191,28 +209,42 @@ hr {
 /* Colors */
 .skills {
   color: #F3C110!important;
+  border-color: #F3C110!important;
 }
 
 .github {
   color: #B5D045!important;
+  border-color: #B5D045!important;
 }
 
 .jobs {
   color: #E07A3F!important;
+  border-color: #E07A3F!important;
 }
 
 .proficiency {
   color: #FF9AC8!important;
+  border-color: #FF9AC8!important;
 }
 
 .volunteering {
   color: #81C0C5!important;
+  border-color: #81C0C5!important;
 }
 
 .red {
   color: #D51930!important;
+  border-color: #D51930!important;
 }
 
+
+
+/* Borders */
+.border {
+  padding-left: 10px;
+  border-left: solid 2px;
+  color: white!important;
+}
 
 
 /* Blinking Animation */

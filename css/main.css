@@ -144,6 +144,14 @@ hr {
 
 
 
+/* Work Experience */
+#experience p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+
+
 /* Menu */
 .menu {
   float: right;
@@ -242,6 +250,7 @@ hr {
 /* Borders */
 .border {
   padding-left: 10px;
+  margin-bottom: 7.5px;
   border-left: solid 2px;
   color: white!important;
 }

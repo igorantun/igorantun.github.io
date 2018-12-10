@@ -40,15 +40,15 @@
   <body>
     <div id='nav'>
       <span>MENU</span>
-      <a data-scroll class='red'          href='#intro'>about</a>
-      <a data-scroll class='skills'       href='#skills'>skills</a>
-      <a data-scroll class='github'       href='#projects'>projects</a>
-      <a data-scroll class='jobs'         href='#work'>work</a>
-      <a data-scroll class='proficiency'  href='#translations'>translation</a>
-      <a data-scroll class='volunteering' href='#volunteer'>volunteering</a>
-      <a data-scroll                      href='#contact'>contact</a>
+      <a class='red'          href='#intro'>about</a>
+      <a class='skills'       href='#skills'>skills</a>
+      <a class='github'       href='#projects'>projects</a>
+      <a class='jobs'         href='#work'>work</a>
+      <a class='proficiency'  href='#translations'>translation</a>
+      <a class='volunteering' href='#volunteer'>volunteering</a>
+      <a                      href='#contact'>contact</a>
       <br>
-      <a href='#'><small>DOWNLOAD PDF</small></a>
+      <a target='_blank' href="Igor Antun's Resume.pdf"><small>DOWNLOAD PDF</small></a>
     </div>
 
     <div id='intro'>
@@ -56,7 +56,7 @@
       <div class='middle'>
         <h1>Igor Antun <span class='blinking-cursor'>|</span></h1>
         <h2>programmer & translator</h2>
-        <div id='status'>● AVAILABLE FOR HIRE</div>
+        <div id='status'>● NOT AVAILABLE FOR HIRE</div>
         <a href='mailto:igor@antun.me'>igor@antun.me</a>
       </div>
       <div class='middle menu'>
@@ -71,18 +71,23 @@
     <div class='section row'>
         <div id='bio' class='twelve wide column'>
           <h1>About Me</h1>
-          <h2 id='details'>use the menu to get details</h2>
         </div>
 
         <div class='twelve wide column'>
           <hr>
           <p class='description'>
             <div class='border red'>
-              <p>My name is <b>Igor Antun</b>, and I'm a fullstack developer and translator based in Brazil.</p>
+              <p>Hey there! My name is <b>Igor Antun</b>, and I'm a fullstack developer and translator based in Brazil.</p>
+              <p>
+                Starting playing with tech from very early on my childhood, my first contact with
+                programming was at age 9, and have been passionate about it ever
+                since. From the day I was first introduced to Adobe's ActionScript, I
+                could not see myself doing anything other than coding.
+              </p>
             </div>
-
+            <br>
             <div class='border skills'>
-              <p>I have experience with front and backend development, databases and system administration and devops. Specific skills are listed below.</p>
+              <p>I have experience with both front and backend development, database modeling, sysops and devops. More specific skills are listed below.</p>
             </div>
 
             <div class='border github'>
@@ -90,10 +95,10 @@
               from web-based chat applications to desktop software.</p>
             </div>
 
-            <div class='border jobs'>
+            <!-- div class='border jobs'>
               <p>I am currently actively looking for part-time or freelance jobs as a Frontend and/or Backend Javascript Developer.
               If you have or know of any opportunity, <a href="mailto:igor@antun.me?Subject=Job Opportunity">let me know</a>.</p>
-            </div>
+            </div -->
 
             <div class='border proficiency'>
               <p>I speak both Portuguese and English fluently, and I am currently learning Spanish and German.</p>
@@ -101,7 +106,7 @@
             </div>
 
             <div class='border volunteering'>
-              <p>I have extensive experience volunteering for non-profit organizations and doing social work.</p>
+              <p>Aside from the tech side, I'm also proud of having an extensive background volunteering for non-profit organizations and doing social work.</p>
             </div>
           </p>
           <hr>
@@ -119,33 +124,37 @@
         <div class='eight wide on desktop twelve wide on mobile column'>
           <hr>
           <h2>Frontend Development</h2>
-          <p class='description'>HTML, EJS, Bootstrap, Jade/Pug <span class='level skills'>★★★★★</span></p>
-          <p class='description'>CSS, Sass                      <span class='level skills'>★★★★</span></p>
-          <p class='description'>Javascript, jQuery             <span class='level skills'>★★★★★</span></p>
-          <p class='description'>Angular                        <span class='level skills'>★★★</span></p>
-          <p class='description'>Aurelia                        <span class='level skills'>★★</span></p>
-          <p class='description'>Gulp, Grunt                    <span class='level skills'>★★★★</span></p>
+          <p class='description'>HTML, EJS, Jade/Pug   <span class='level skills'>★★★★★</span></p>
+          <p class='description'>CSS, Sass             <span class='level skills'>★★★★★</span></p>
+          <p class='description'>Javascript, jQuery    <span class='level skills'>★★★★★</span></p>
+          <p class='description'>React                 <span class='level skills'>★★★★</span></p>
+          <p class='description'>Next.js               <span class='level skills'>★★★</span></p>
+          <p class='description'>Angular               <span class='level skills'>★★★</span></p>
+          <p class='description'>Gulp, Grunt, Webpack  <span class='level skills'>★★★</span></p>
 
           <hr>
 
           <h2>Backend Development</h2>
-          <p class='description'>Node.JS   <span class='level skills'>★★★★★</span></p>
-          <p class='description'>MongoDB   <span class='level skills'>★★★★</span></p>
-          <p class='description'>RethinkDB <span class='level skills'>★★★</span></p>
-          <p class='description'>C++       <span class='level skills'>★★</span></p>
-          <p class='description'>Python    <span class='level skills'>★★</span></p>
+          <p class='description'>Node.JS       <span class='level skills'>★★★★★</span></p>
+          <p class='description'>MongoDB       <span class='level skills'>★★★★★</span></p>
+          <p class='description'>PostgreSQL    <span class='level skills'>★★★</span></p>
+          <p class='description'>Redis         <span class='level skills'>★★★</span></p>
+          <p class='description'>ElasticSearch <span class='level skills'>★★★</span></p>
+          <p class='description'>Neo4J         <span class='level skills'>★★</span></p>
+          <p class='description'>C++           <span class='level skills'>★★</span></p>
+          <p class='description'>Python        <span class='level skills'>★★★</span></p>
 
           <hr>
 
           <h2>Other Skills</h2>
-          <p class='description'>Git (Github, Bitbucket, Gitlab) <span class='level skills'>★★★★</span></p>
+          <p class='description'>Git                             <span class='level skills'>★★★★★</span></p>
           <p class='description'>System Administration (Linux)   <span class='level skills'>★★★</span></p>
-          <p class='description'>AWS, DigitalOcean, Heroku       <span class='level skills'>★★★★</span></p>
+          <p class='description'>AWS, Google Cloud, DigitalOcean <span class='level skills'>★★★★</span></p>
           <p class='description'>Trello, JIRA, Asana             <span class='level skills'>★★★★</span></p>
           <p class='description'>Electron, nw.js                 <span class='level skills'>★★★★</span></p>
           <p class='description'>Google Analytics                <span class='level skills'>★★★</span></p>
           <p class='description'>Websockets                      <span class='level skills'>★★★★</span></p>
-          <p class='description'>Docker                          <span class='level skills'>★★</span></p>
+          <p class='description'>Docker                          <span class='level skills'>★★★</span></p>
           <hr>
         </div>
       </div>
@@ -212,21 +221,22 @@
         <div class='eight wide on desktop twelve wide on mobile column'>
           <hr>
           <h2>
-            <a target='_blank' href='http://meu.guru/'>meu.guru</a>
-            <span class='level jobs'>October 2015 - Present</span>
+            <a target='_blank' href='https://pagar.me/'>Pagar.me</a>
+            <span class='level jobs'>January 2018 - Present</span>
           </h2>
-          <p class='techs'>CTO, Backend Engineer, DevOps</p>
+          <p class='techs'>Fullstack Developer</p>
 
           <small><b>• DESCRIPTION</b></small>
-          <p class='description'>meu.guru helps schools and students achieve better results by delivering reports generated by our algorithms and BigData, so they
-          can get their full potential.</p>
+          <p class='description'>Pagar.me is a digital payment service provider company based in Brazil.</p>
 
           <small><b>• RESPONSABILITIES</b></small>
-          <p class='description'>On meu.guru I am responsible for structuring and managing our scalable infrastructure so we have a redundant, zero-downtime application.
-          I'm also responsible for maintaining our NodeJS API and occasionally doing some frontend work.</p>
+          <p class='description'> At Pagar.me, I am responsible for designing, developing, testing, deploying and maintaining
+          scalable web services, with my team. Scalability and reliability are main concerns. We take care of a product from
+          its conception to its deployment, including planning its infrastructure, continuously improving it through
+          customer feedback, and monitoring its performance.</p>
 
           <small><b>• TECHNOLOGIES</b></small>
-          <p class='description'>NodeJS, MongoDB, Aurelia, Docker, Rancher, Nginx</p>
+          <p class='description'>NodeJS, PostgreSQL, MongoDB, React, Docker, AWS</p>
 
           <hr>
 
@@ -269,7 +279,7 @@
 
           <h2>
             <a target='_blank' href='http://www.syligo.com/'>Syligo</a>
-            <span class='level jobs'>September 2015 - August 2016</span>
+            <span class='level jobs'>September 2015 - October 2017</span>
           </h2>
           <p class='techs'>Freelance Fullstack Developer</p>
 
@@ -278,8 +288,8 @@
           technology, Syligo believes that every idea is a seed that deserves to be developed and connected to others.</p>
 
           <small><b>• RESPONSABILITIES</b></small>
-          <p class='description'>I've worked with Syligo on multiple projects, ranging from web applications to backend solutions. I was responsible for refactoring
-          and reestructuring web applications as well as building web pages and backend APIs.</p>
+          <p class='description'>I have worked with Syligo on multiple projects, ranging from responsive web applications and hotsites to backend APIs, refactoring
+          restructuring and documenting them.</p>
 
           <small><b>• TECHNOLOGIES</b></small>
           <p class='description'>NodeJS, MongoDB, Gulp, EJS, AngularJS, SASS, AWS</p>
@@ -288,7 +298,7 @@
 
           <h2>
             Vitrineed
-            <span class='level jobs'>December 2014 - August 2015</span>
+            <span class='level jobs'>February 2017 - January 2018</span>
           </h2>
           <p class='techs'>NodeJS Backend Developer</p>
 
@@ -301,7 +311,7 @@
           from various e-commerces and an API to easily access and consume this data from the Frontend.</p>
 
           <small><b>• TECHNOLOGIES</b></small>
-          <p class='description'>NodeJS, RethinkDB, X-Ray</p>
+          <p class='description'>Python, NodeJS, RethinkDB, ElasticSearch, MongoDB, X-Ray</p>
           <hr>
         </div>
       </div>
@@ -380,7 +390,7 @@
     </div>
 
     <div id='end'>
-      <div><a data-scroll href='#intro' class='red'>go to top</a></div>
+      <div><a href='#intro' class='red'>go to top</a></div>
       <br>
       <div>made with <span class='red'>❤</span> by igor antun</div>
       <br>
@@ -390,8 +400,8 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Varela+Round' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-    <script src='https://cdn.rawgit.com/cferdinandi/smooth-scroll/master/dist/js/smooth-scroll.min.js'></script>
-    <script>smoothScroll.init();</script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -80,11 +80,11 @@ hr {
   margin-left: auto;
 }
 
-.section:after { 
-  content: ' '; 
+.section:after {
+  content: ' ';
   display: block;
   clear: both;
-} 
+}
 
 .disabled {
   pointer-events: none;
@@ -114,7 +114,7 @@ hr {
 
 #status {
   display: block;
-  color: #B5D045;
+  color: #E07A3F;
   padding-top: 5px;
   font-size: 11px;
   font-weight: bold;
